@@ -1,3 +1,3 @@
 def same_tree
-	puts "hello"
+	puts "hello world"
 end
