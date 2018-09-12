@@ -1,11 +1,15 @@
 class LengthofLastWord
 	def last_word_length(str)
-		return 0 if str == ''
+		
 		arr = []
 		arr = str.split
-		print arr, "\n"
-		last_word = arr[arr.length - 1]
-		return last_word.length
+		#print arr
+		if arr == []
+			return 0 
+		else
+			last_word = arr[arr.length - 1]
+			return last_word.length
+		end
 	end
 end
 

@@ -1,12 +1,12 @@
 class RemoveElement
 	def new_length(arr, num)
-		len = 0
+		new_array = []
 		for i in 0...arr.length
 			if num != arr[i]
-				len += 1
+				new_array << arr[i]
 			end
 		end
-		return len
+		return new_array.length
 	end
 end
 

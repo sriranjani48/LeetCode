@@ -9,7 +9,7 @@ class FizzBuzzProblem
 			elsif i % 5 == 0
 				arr.push("Buzz")
 			else
-				arr.push(i)
+				arr.push(i.to_s)
 			end
 		end
 		arr
@@ -18,6 +18,7 @@ end
 
 number = FizzBuzzProblem.new
 print number.fizz_buzz(15)
+print number.fizz_buzz(1)
 				
 				
 				

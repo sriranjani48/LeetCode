@@ -5,8 +5,8 @@ class InsertingPosition
 	def search_position(arr,val)
 		i = 0
 		while i < arr.length
-			if arr[i] > val
-				break
+			if arr[i] >= val
+				return i
 			end
 			i += 1
 		end
@@ -15,7 +15,7 @@ class InsertingPosition
 end
 position = InsertingPosition.new
 puts position.search_position([1,3,5,6],5)
-puts position.search_position([1,3,5,6],2)
+puts position.search_position([1,3,5,6],3)
 puts position.search_position([1,3,5,6],7)
 puts position.search_position([1,3,5,6],0)
 puts position.search_position([],2)
